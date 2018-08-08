@@ -232,7 +232,7 @@ if (args.length == 0) {
 .addField("4:", "```" + ytResults[3] + "```")
 .addField("5:", "```" + ytResults[4] + "```")
 .addBlankField()
-.setFooter("Send !add [result number] to queue the song.");
+.setFooter("Send rnadd [result number] to queue the song.");
 		message.channel.send(ytEmbed);
 		youtubeSearched = true;
 	}).catch(err => console.log(err));
