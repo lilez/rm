@@ -446,7 +446,7 @@ function shuffle(queue) {
 /*-------------------*/
 const devs = ["300572903068663818" , ""]
 
-const adminprefix = "!";
+const adminprefix = "rn";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
