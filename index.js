@@ -447,7 +447,7 @@ function shuffle(queue) {
 
 const adminprefix = "n";
 const devs = ['300572903068663818','431150885549113344'];
-client.on('message', message => {
+bot.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
     
