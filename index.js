@@ -202,7 +202,7 @@ if (queue.length === 0) { // if there are no songs in the queue, send message th
 		queue.splice(1);
 		songsQueue.splice(1);
 	} else {
-		message.reply("**You need to type !queue clear without following arguments.**");
+		message.reply("**You need to type squeue clear without following arguments.**");
 	}
 } else if (args.length > 0 && args[0] == 'shuffle') {
 	let tempA = [songsQueue[0]];
@@ -257,7 +257,7 @@ if (args.length == 0) {
 .addField("4:", "```" + ytResults[3] + "```")
 .addField("5:", "```" + ytResults[4] + "```")
 .addBlankField()
-.setFooter("Send rnadd [result number] to queue the song.");
+.setFooter("Send sadd [result number] to queue the song.");
 		message.channel.send(ytEmbed);
 		youtubeSearched = true;
 	}).catch(err => console.log(err));
@@ -288,7 +288,7 @@ break;
 
 		case "vol":
 if (args.length == 0 && dispatcher) {
-	message.reply(`current volume is ${dispatcher.volume}. Type !vol [percentage - 0 to 200] to set music volume.`);
+	message.reply(`current volume is ${dispatcher.volume}. Type svol [percentage - 0 to 200] to set music volume.`);
 } else if (args.length > 0 && regVol.test(args) == true && dispatcher) {
 	dispatcher.setVolume(args * 0.01);
 	message.reply(`music volume has been set to ${args}%.`);
